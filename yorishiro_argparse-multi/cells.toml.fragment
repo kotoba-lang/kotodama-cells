@@ -2,7 +2,7 @@
 #
 # Append to 50-infra/cluster/murakumo/cell-runner/cells.toml when the
 # cell-runner is wired to discover yorishiri cells under
-# 40-engine/kotoba/crates/kotoba-kotodama/cells/yorishiro_*/cell.py (ADR-2605202200 + 2605211900).
+# kotoba-lang/kotodama-cells/yorishiro_*/cell.py (ADR-2605202200 + 2605211900).
 # binary-cli yorishiri additionally require argparse-multi on
 # the cell runtime's PATH.
 

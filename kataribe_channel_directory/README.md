@@ -35,6 +35,6 @@ This cell is wayfinding to **external/official** channels only:
 ## Tests
 
 ```sh
-cd 20-actors/kotoba-kotodama/cells/kataribe_channel_directory
+cd kotoba-lang/kotodama-cells/kataribe_channel_directory
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest test_channel_match.py -q
 ```

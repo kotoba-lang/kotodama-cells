@@ -33,6 +33,6 @@ boundary)** and makes **no eligibility/obligation determination**:
 ## Tests
 
 ```sh
-cd 20-actors/kotoba-kotodama/cells/shidemori_registry_directory
+cd kotoba-lang/kotodama-cells/shidemori_registry_directory
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest test_registry_match.py -q
 ```

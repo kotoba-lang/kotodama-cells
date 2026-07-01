@@ -27,7 +27,7 @@ and returns `error: "binary not found on PATH"` if missing.
 
 ## MCP exposure
 
-`20-actors/kotoba-kotodama/mcp/yorishiro-argparse-multi-mcp/` (stdio + Streamable HTTP)
+`kotoba-lang/kotodama-mcp/yorishiro-argparse-multi-mcp/` (stdio + Streamable HTTP)
 
 ## Regenerate
 
@@ -46,7 +46,7 @@ See `cells.toml.fragment` in this directory.
   "mcpServers": {
     "etzhayyim-yorishiro-argparse-multi": {
       "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/repo/20-actors/kotoba-kotodama/mcp/yorishiro-argparse-multi-mcp/src/cli.ts"]
+      "args": ["/ABSOLUTE/PATH/TO/repo/kotoba-lang/kotodama-mcp/yorishiro-argparse-multi-mcp/src/cli.ts"]
     }
   }
 }

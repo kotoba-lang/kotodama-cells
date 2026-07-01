@@ -36,6 +36,6 @@ This machine auto-loads an entrypoint pytest plugin that pulls a broken
 `pydantic`; disable plugin autoload to run the pure-core suite:
 
 ```sh
-cd 20-actors/kotoba-kotodama/cells/kazaori_agency_directory
+cd kotoba-lang/kotodama-cells/kazaori_agency_directory
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest test_agency_match.py -q
 ```

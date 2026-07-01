@@ -23,7 +23,7 @@ Charter purposes: `grant`
 
 ## MCP exposure
 
-`20-actors/kotoba-kotodama/mcp/yorishiro-crossref-mcp/` (stdio + Streamable HTTP)
+`kotoba-lang/kotodama-mcp/yorishiro-crossref-mcp/` (stdio + Streamable HTTP)
 
 ## Regenerate
 
@@ -39,7 +39,7 @@ OpenAPI spec at `00-contracts/openapi/kami/crossref.openapi.json` instead.
 The cells.toml fragment `cells.toml.fragment` in this directory is the
 authoritative entry for the Murakumo cell-runner. Append it to
 `50-infra/cluster/murakumo/cell-runner/cells.toml` once the cell-runner
-supports `20-actors/kotoba-kotodama/cells/yorishiro_*/cell.py` discovery
+supports `kotoba-lang/kotodama-cells/yorishiro_*/cell.py` discovery
 (ADR-2605202200 wiring).
 
 ## Claude Desktop / Codex CLI
@@ -49,7 +49,7 @@ supports `20-actors/kotoba-kotodama/cells/yorishiro_*/cell.py` discovery
   "mcpServers": {
     "etzhayyim-yorishiro-crossref": {
       "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/repo/20-actors/kotoba-kotodama/mcp/yorishiro-crossref-mcp/src/cli.ts"],
+      "args": ["/ABSOLUTE/PATH/TO/repo/kotoba-lang/kotodama-mcp/yorishiro-crossref-mcp/src/cli.ts"],
       "env": { "YORISHIRO_CROSSREF_BASE_URL": "https://api.crossref.org" }
     }
   }

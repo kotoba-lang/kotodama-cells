@@ -33,6 +33,6 @@ danjo is the **"censor's eye, no sword"** — observational, non-adjudicating:
 ## Tests
 
 ```sh
-cd 20-actors/kotoba-kotodama/cells/danjo_source_directory
+cd kotoba-lang/kotodama-cells/danjo_source_directory
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest test_source_match.py -q
 ```

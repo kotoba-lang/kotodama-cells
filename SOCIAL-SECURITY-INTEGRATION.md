@@ -29,7 +29,7 @@ Companion to `SOCIAL-SECURITY-PIPELINE.md` (orchestration). Master: ADR-26053023
 ## Seam 3 — MCP facade (Stage 6 EXPOSE)
 
 - **Cell**: `socialsecurity_mcp_facade`
-- **Substrate**: kotoba-kotodama MCP tool facade (ADR-0087); facade actors live under `20-actors/kotoba-kotodama/mcp/<name>/kotoba-kotodama.jsonld` and surface tools at `mcp.etzhayyim.com`.
+- **Substrate**: kotoba-kotodama MCP tool facade (ADR-0087); facade actors live under `kotoba-lang/kotodama-mcp/<name>/kotoba-kotodama.jsonld` and surface tools at `mcp.etzhayyim.com`.
 - **Wire (R1, deployable artifact — NOT created at R0)**: a `kotoba-kotodama.jsonld` for an MCP facade exposing:
   - **read tools** (open): `socialSecurity.declaration`, `socialSecurity.metrics`, `socialSecurity.eligibility`, `socialSecurity.status` (own-data, consent-bound)
   - **write tool** (member-signed): `socialSecurity.beginVow` → returns an **unsigned** vow payload; signed on the member's device; re-enters `socialsecurity_vow_intake`.
@@ -65,6 +65,6 @@ Companion to `SOCIAL-SECURITY-PIPELINE.md` (orchestration). Master: ADR-26053023
 |---|---|---|
 | openmail | set `OPENMAIL_POSTAGE_SIGNER_DID` (member/operator) + confirm Public Fund postage budget | `notice` import gate |
 | feed-post | set `FEED_POST_MEMBRANE_PROJECTION_DID` + `CHARTER_RIDER_SCANNER_DID` | `outreach`/`publish` import gates |
-| MCP | create `20-actors/kotoba-kotodama/mcp/social-security-mcp/kotoba-kotodama.jsonld` + set `MCP_FACADE_REGISTRY_DID` + `COUNCIL_SS_PIPELINE_RATIFY_TX_HASH` (Lv6+) | `mcp_facade` import gate (read tools only; write still vow-gated) |
+| MCP | create `kotoba-lang/kotodama-mcp/social-security-mcp/kotoba-kotodama.jsonld` + set `MCP_FACADE_REGISTRY_DID` + `COUNCIL_SS_PIPELINE_RATIFY_TX_HASH` (Lv6+) | `mcp_facade` import gate (read tools only; write still vow-gated) |
 
 **All three remain blocked at R0.** Even with seams wired (R1), the identity-level sentinels (`COUNCIL_SS_IDENTITY_RATIFY_TX_HASH`, `SYBIL_FRAMEWORK_RATIFY_TX_HASH`) keep real email/post/mint/benefit off until Council Lv7+ §1.16 ratify (post 2026-06-19) — R2.

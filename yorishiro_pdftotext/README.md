@@ -26,7 +26,7 @@ and returns `error: "binary not found on PATH"` if missing.
 
 ## MCP exposure
 
-`20-actors/kotoba-kotodama/mcp/yorishiro-pdftotext-mcp/` (stdio + Streamable HTTP)
+`kotoba-lang/kotodama-mcp/yorishiro-pdftotext-mcp/` (stdio + Streamable HTTP)
 
 ## Regenerate
 
@@ -45,7 +45,7 @@ See `cells.toml.fragment` in this directory.
   "mcpServers": {
     "etzhayyim-yorishiro-pdftotext": {
       "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/repo/20-actors/kotoba-kotodama/mcp/yorishiro-pdftotext-mcp/src/cli.ts"]
+      "args": ["/ABSOLUTE/PATH/TO/repo/kotoba-lang/kotodama-mcp/yorishiro-pdftotext-mcp/src/cli.ts"]
     }
   }
 }

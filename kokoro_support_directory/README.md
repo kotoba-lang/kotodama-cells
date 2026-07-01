@@ -34,6 +34,6 @@ kokoro is community/spiritual/relational mental-health **support routing** —
 ## Tests
 
 ```sh
-cd 20-actors/kotoba-kotodama/cells/kokoro_support_directory
+cd kotoba-lang/kotodama-cells/kokoro_support_directory
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python3 -m pytest test_support_match.py -q
 ```

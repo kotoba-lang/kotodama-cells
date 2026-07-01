@@ -95,7 +95,7 @@ mirror of `kotodama.eligibility.web3_ports`:
 stays test-environment-friendly. Install via:
 
 ```bash
-uv pip install -e '20-actors/kotoba-kotodama/py[eligibility,atproto]'
+uv pip install -e 'kotoba-lang/kotodama-py[eligibility,atproto]'
 ```
 
 The cell is also still unit-testable today via the fake ports under
@@ -104,7 +104,7 @@ The cell is also still unit-testable today via the fake ports under
 ## Running
 
 ```bash
-cd 20-actors/kotoba-kotodama/py
+cd kotoba-lang/kotodama-py
 uv run pytest src/kotodama/../../cells/treasury_rebalance/tests -v
 ```
 
